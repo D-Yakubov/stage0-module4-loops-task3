@@ -2,6 +2,18 @@ package school.mjc.stage0.loops.task3;
 
 public class DigitsSum {
     public void printDigitsSum(int t){
-
+        int sum = 0;
+        if (t>0){
+            for(;t>0;){
+                sum+=t%10;
+                t/=10;
+            }
+        }else{
+            for(;t<0;){
+                sum-=(t%10);
+                t/=10;
+            }
+        }
+        System.out.println(sum);
     }
 }
